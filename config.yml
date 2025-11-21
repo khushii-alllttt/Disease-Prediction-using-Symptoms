@@ -1,0 +1,29 @@
+# Random State
+random_state: 101
+
+# Verbose for Log Prints
+verbose: True
+
+# Dataset Path
+dataset:
+  # Training Dataset Path
+  training_data_path: 'C:\Users\lenovo\OneDrive\Desktop\Disease Prediction from Symptoms\training_data(1).csv'
+  # Test Dataset Path
+  test_data_path: 'C:\Users\lenovo\OneDrive\Desktop\Disease Prediction from Symptoms\test_data(1).csv'
+  # Validation Data Size for train_test_split
+  validation_size: 0.33
+
+# Model Parameters
+model:
+  decision_tree:
+    criterion: 'entropy'
+
+  random_forest:
+    n_estimators: 10
+
+  gradient_boost:
+    n_estimators: 150
+    criterion: 'friedman_mse'
+
+# Model Save Path
+model_save_path: './saved_model/'
